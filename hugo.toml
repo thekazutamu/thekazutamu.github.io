@@ -6,10 +6,8 @@ sectionPagesMenu = 'main'
 
 [params]
   mainSections = ["posts", "writeups"]
-
-[params]
-ShowBreadCrumbs = false
-ShowPostNavLinks = false
+  ShowBreadCrumbs = false
+  ShowPostNavLinks = false
 
 [params.cover]
 image = "/images/kazutamu_001.JPG"
