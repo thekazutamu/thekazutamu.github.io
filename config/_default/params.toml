@@ -2,14 +2,20 @@ enableSearch = true
 
 copyright = "© { year } kazutamu"
 
+disableImageOptimization = false
+
+disableImageZoom = false
+
 [params]
   mainSections = ["posts"]
 
 [homepage]
-  showRecent = true
-  recentLimit = 5
   layout = "background"
   homepageImage = "images/kazutamu_001.JPG"
+  showRecent = true
+  recentLimit = 5
+  cardView = true
+  layoutBackgroundBlur = true
 
 [footer]
 showThemeAttribution = false
