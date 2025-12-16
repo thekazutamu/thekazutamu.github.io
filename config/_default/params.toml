@@ -10,7 +10,7 @@ disableImageZoom = false
   mainSections = ["posts"]
 
 [homepage]
-  layout = "background"
+  layout = "hero"
   homepageImage = "images/kazutamu_001.JPG"
   showRecent = true
   recentLimit = 5
