@@ -8,7 +8,7 @@ sectionPagesMenu = 'main'
   mainSections = ["posts", "writeups"]
 
 [params.homeInfoParams]
-# Title = "Kazutamu"
+Title = "Kazutamu"
 Content = "心躍るセキュリティ"
 
 [params.footer]
