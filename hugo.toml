@@ -2,22 +2,3 @@ baseURL = 'https://www.kazutamu.com/'
 languageCode = 'ja-jp'
 title = 'KAZUTAMU'
 theme = 'blowfish'
-sectionPagesMenu = 'main'
-
-[params]
-  mainSections = ["posts", "writeups"]
-  ShowBreadCrumbs = false
-  ShowPostNavLinks = false
-
-[params.profileMode]
-enabled = true
-title = "KAZUTAMU"
-subtitle = "心躍るセキュリティ"
-imageUrl = "/images/kazutamu_001.JPG"
-imageTitle = "kazutamu"
-imageWidth = 160
-imageHeight = 160
-
-[params.footer]
-  text = '[免責事項](/disclaimer/)'
-
