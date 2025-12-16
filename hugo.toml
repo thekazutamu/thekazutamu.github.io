@@ -1,5 +1,5 @@
 baseURL = 'https://www.kazutamu.com/'
-languageCode = 'en-us'
+languageCode = 'ja-jp'
 title = 'KAZUTAMU'
 theme = 'PaperMod'
 sectionPagesMenu = 'main'
@@ -10,7 +10,7 @@ sectionPagesMenu = 'main'
   ShowPostNavLinks = false
 
 [params.cover]
-image = "/images/kazutamu_001.JPG"
+image = "/static/images/kazutamu_001.JPG"
 alt = "kazutamu"
 caption = ""
 relative = false
