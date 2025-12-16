@@ -9,7 +9,7 @@ copyright = "© { year } kazutamu"
   showRecent = true
   recentLimit = 5
   layout = "background"
-  homepageImage = "/images/kazutamu_001.JPG"
+  homepageImage = "images/kazutamu_001.JPG"
 
 [footer]
 showThemeAttribution = false
