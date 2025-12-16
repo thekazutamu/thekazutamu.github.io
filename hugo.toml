@@ -7,6 +7,17 @@ sectionPagesMenu = 'main'
 [params]
   mainSections = ["posts", "writeups"]
 
+[params]
+ShowBreadCrumbs = false
+ShowPostNavLinks = false
+
+[params.cover]
+image = "/images/kazutamu_001.JPG"
+alt = "kazutamu"
+caption = ""
+relative = false
+hidden = false
+
 [params.homeInfoParams]
 Title = "KAZUTAMU"
 Content = "心躍るセキュリティ"
