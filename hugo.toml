@@ -9,8 +9,8 @@ sectionPagesMenu = 'main'
   ShowBreadCrumbs = false
   ShowPostNavLinks = false
 
-[params.cover]
-image = "/static/images/kazutamu_001.JPG"
+[params.profileMode]
+image = "/images/kazutamu_001.JPG"
 alt = "kazutamu"
 caption = ""
 relative = false
