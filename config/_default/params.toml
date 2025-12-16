@@ -1,7 +1,8 @@
 enableSearch = true
 
-[footer]
 copyright = "© 2025 kazutamu"
+
+[footer]
 showThemeAttribution = false
 
 [article]
