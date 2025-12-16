@@ -1,7 +1,5 @@
 ---
 title: "KAZUTAMUについて"
-menu:
-  main:
-    weight: 4
+weight: 4
 description: "KAZUTAMUについて"
 ---
