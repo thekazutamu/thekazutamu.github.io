@@ -10,15 +10,14 @@ sectionPagesMenu = 'main'
   ShowPostNavLinks = false
 
 [params.profileMode]
-image = "/images/kazutamu_001.JPG"
-alt = "kazutamu"
-caption = ""
-relative = false
-hidden = false
+enabled = true
+title = "KAZUTAMU"
+subtitle = "心躍るセキュリティ"
+imageUrl = "/images/kazutamu_001.JPG"
+imageTitle = "kazutamu"
+imageWidth = 160
+imageHeight = 160
 
-[params.homeInfoParams]
-Title = "KAZUTAMU"
-Content = "心躍るセキュリティ"
 
 [params.footer]
   text = '[免責事項](/disclaimer/)'
