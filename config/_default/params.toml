@@ -6,16 +6,16 @@ disableImageOptimization = false
 
 disableImageZoom = false
 
-defaultBackgroundImage = "images/kazutamu_001.JPG"
+defaultBackgroundImage = "img/kazutamu_001.JPG"
 
-defaultFeaturedImage = "images/kazutamu_001.JPG"
+defaultFeaturedImage = "img/kazutamu_001.JPG"
 
 [params]
   mainSections = ["posts"]
 
 [homepage]
   layout = "background"
-  homepageImage = "images/kazutamu_001.JPG"
+  # homepageImage = "img/kazutamu_001.JPG"
   showRecent = true
   recentLimit = 5
   cardView = true
