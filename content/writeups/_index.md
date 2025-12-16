@@ -1,5 +1,5 @@
 ---
 title: "Writeup"
 weight: 3
-description: "Writeup"
+description: "Hack The Boxを中心としたCTFのWriteup集"
 ---
