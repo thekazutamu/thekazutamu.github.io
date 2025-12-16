@@ -6,11 +6,15 @@ disableImageOptimization = false
 
 disableImageZoom = false
 
+defaultBackgroundImage = "images/kazutamu_001.JPG"
+
+defaultFeaturedImage = "images/kazutamu_001.JPG"
+
 [params]
   mainSections = ["posts"]
 
 [homepage]
-  layout = "hero"
+  layout = "background"
   homepageImage = "images/kazutamu_001.JPG"
   showRecent = true
   recentLimit = 5
