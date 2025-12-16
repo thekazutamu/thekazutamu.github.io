@@ -2,7 +2,7 @@ enableSearch = true
 
 copyright = "© { year } kazutamu"
 
-disableImageOptimization = false
+disableImageOptimization = true
 
 disableImageZoom = false
 
@@ -15,7 +15,6 @@ defaultFeaturedImage = "img/kazutamu_001.JPG"
 
 [homepage]
   layout = "background"
-  # homepageImage = "img/kazutamu_001.JPG"
   showRecent = true
   recentLimit = 5
   cardView = true
