@@ -84,7 +84,7 @@ jobs:
             --minify \
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Add CNAME for custom domain
-        run: echo "kazutamu.com" > ./public/CNAME
+        run: echo "www.kazutamu.com" > ./public/CNAME
       - name: Cache save
         id: cache-save
         uses: actions/cache/save@v4
