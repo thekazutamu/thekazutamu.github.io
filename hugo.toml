@@ -1,7 +1,7 @@
 baseURL = 'https://www.kazutamu.com/'
 languageCode = 'ja-jp'
 title = 'KAZUTAMU'
-theme = 'PaperMod'
+theme = 'blowfish'
 sectionPagesMenu = 'main'
 
 [params]
