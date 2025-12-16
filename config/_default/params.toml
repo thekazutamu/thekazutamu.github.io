@@ -3,7 +3,3 @@ enableSearch = true
 [footer]
 showCopyright = true
 showThemeAttribution = false
-
-[[footer.links]]
-name = "免責事項"
-url = "/disclaimer/"

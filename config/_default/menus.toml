@@ -13,7 +13,7 @@ name = "本サイトについて"
 pageRef = "/about"
 weight = 30
 
-[[footer.links]]
+[[footer]]
 name = "免責事項"
 pageRef = "/disclaimer"
 weight = 10
