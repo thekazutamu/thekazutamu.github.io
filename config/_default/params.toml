@@ -8,8 +8,6 @@ disableImageZoom = false
 
 defaultBackgroundImage = "img/kazutamu_001.JPG"
 
-defaultFeaturedImage = "img/kazutamu_001.JPG"
-
 [params]
   mainSections = ["posts"]
 
@@ -17,7 +15,6 @@ defaultFeaturedImage = "img/kazutamu_001.JPG"
   layout = "background"
   showRecent = true
   recentLimit = 5
-  cardView = true
   layoutBackgroundBlur = true
 
 [footer]
