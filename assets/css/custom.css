@@ -5,6 +5,7 @@ main article.prose > div > div.mx-auto {
   text-align: left;
 }
 
+
 /* lead（心躍る〜）を左寄せ */
 main article.prose .lead {
   text-align: left;
