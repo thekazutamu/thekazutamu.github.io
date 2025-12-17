@@ -1,12 +1,11 @@
-.hero {
+/* Home hero 全体を左寄せ */
+main article.prose > div > div.mx-auto {
+  margin-left: 0;
+  margin-right: auto;
   text-align: left;
 }
 
-.hero .container {
-  align-items: flex-start;
-  padding-left: 8vw; /* 好みで 6〜10 */
-}
-
-.hero .lead {
+/* lead（心躍る〜）を左寄せ */
+main article.prose .lead {
   text-align: left;
 }
