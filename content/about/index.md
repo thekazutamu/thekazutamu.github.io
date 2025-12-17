@@ -13,6 +13,8 @@ showEdit: false
 showLikes: false
 showRelated: false
 showPagination: false
+showHero: article.showHero
+heroStyle: background
 ---
 
 # whoami
