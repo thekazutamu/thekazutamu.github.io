@@ -1,4 +1,5 @@
 baseURL = 'https://www.kazutamu.com/'
+defaultContentLanguage = "ja"
 languageCode = 'ja-jp'
 title = 'KAZUTAMU'
 theme = 'blowfish'
