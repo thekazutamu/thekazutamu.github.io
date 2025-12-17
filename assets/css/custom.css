@@ -1,3 +1,9 @@
 #announcement-toggle:checked + .announcement-bar {
   display: none;
 }
+
+body {
+  overflow-wrap: anywhere;
+  word-break: auto-phrase;
+  line-break: strict;
+}

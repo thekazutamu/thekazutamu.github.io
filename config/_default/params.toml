@@ -10,6 +10,8 @@ defaultBackgroundImage = "img/kazutamu_001.JPG"
 
 colorScheme = "Blowfish"
 
+
+
 [params]
   mainSections = ["posts"]
 
@@ -17,9 +19,9 @@ colorScheme = "Blowfish"
   enable = true
   text = "🚧 サイト構築中です（一部コンテンツは順次公開予定）"
 
-  
+
 [homepage]
-  layout = "background"
+  layout = "hero"
   showRecent = true
   recentLimit = 5
   layoutBackgroundBlur = true
@@ -28,6 +30,7 @@ colorScheme = "Blowfish"
 showThemeAttribution = false
 
 [article]
-showTableOfContents = true
-showWordCount = false
-showReadingTime = false
+  showDate = true
+  showWordCount = false
+  showReadingTime = false
+  showTaxonomies = true

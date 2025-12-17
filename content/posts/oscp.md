@@ -2,6 +2,7 @@
 date = '2025-12-15T23:27:02+09:00'
 draft = false
 title = 'OSCP+合格体験記'
+tags = ['OSCP', '資格']
 +++
 今年、OSCP+に合格しました。
 私も受験するまでに様々な合格体験記を読みましたが、これから挑戦される方の参考になればと思い、本記事では私なりの視点で得られた知見を共有します。
@@ -59,3 +60,7 @@ terminator
 [Rustscan](https://github.com/bee-san/RustScan)
 
 [SecLists](https://www.kali.org/tools/seclists/)
+
+## さいごに
+
+諦めないことが肝心です。

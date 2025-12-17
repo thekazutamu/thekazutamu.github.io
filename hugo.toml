@@ -3,3 +3,9 @@ defaultContentLanguage = "ja"
 languageCode = 'ja-jp'
 title = 'KAZUTAMU'
 theme = 'blowfish'
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
