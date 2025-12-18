@@ -15,6 +15,8 @@ showRelated: false
 showPagination: false
 showHero: article.showHero
 heroStyle: background
+# 背景画像の位置（例: "right center" / "75% 50%"）
+imagePosition: "right center"
 ---
 
 # whoami
