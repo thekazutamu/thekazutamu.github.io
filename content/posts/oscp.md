@@ -40,7 +40,9 @@ HackTheBoxのウォークスルーや、Linux/Windowsのハッキング技術に
 学んだことは全てObsidianにまとめました。自分の知識量をグラフビューで可視化できるので、モチベーションアップにもつながりました。マイルールとして、全て[MITRE ATT&CK](https://attack.mitre.org/)と関連づけるようにタグ付けしていました。後になって、これはレポート作成に活きると実感しました。
 
 ![obsidian](/img/obsidian.gif)
-
+<video autoplay loop muted playsinline preload="metadata" style="max-width:100%;height:auto;">
+  <source src="/img/output.mp4" type="video/mp4">
+</video>
 
 [Sublime Text](https://www.sublimetext.com/)
 
