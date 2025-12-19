@@ -1,6 +1,7 @@
 +++
 draft = false
 date = '2025-12-15T23:27:02+09:00'
+lastmod = '2025-12-20T23:27:02+09:00'
 title = 'OSCP+合格体験記'
 tags = ['OSCP', '資格']
 +++
@@ -37,6 +38,9 @@ HackTheBoxのウォークスルーや、Linux/Windowsのハッキング技術に
 [Obsidian](https://obsidian.md/)
 
 学んだことは全てObsidianにまとめました。自分の知識量をグラフビューで可視化できるので、モチベーションアップにもつながりました。マイルールとして、全て[MITRE ATT&CK](https://attack.mitre.org/)と関連づけるようにタグ付けしていました。後になって、これはレポート作成に活きると実感しました。
+
+![obsidian](/img/obsidian.gif)
+
 
 [Sublime Text](https://www.sublimetext.com/)
 
@@ -75,8 +79,6 @@ Kali Linuxのブラウザに登録していたブックマークをご紹介し�
 [Rustscan](https://github.com/bee-san/RustScan)
 
 [SecLists](https://www.kali.org/tools/seclists/)
-
-
 -->
 
 ## さいごに
