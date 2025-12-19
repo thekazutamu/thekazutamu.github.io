@@ -57,3 +57,4 @@ showThemeAttribution = false
   showTaxonomies = true
   # 目次を表示するか
   showTableOfContents = true
+  article.showDateUpdated = true
