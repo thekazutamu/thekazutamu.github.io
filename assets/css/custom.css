@@ -1,4 +1,4 @@
-#announcement-toggle:checked + .announcement-bar {
+announcement-toggle:checked + .announcement-bar {
   display: none;
 }
 

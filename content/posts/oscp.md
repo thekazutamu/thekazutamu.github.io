@@ -1,6 +1,6 @@
 +++
-date = '2025-12-15T23:27:02+09:00'
 draft = false
+date = '2025-12-15T23:27:02+09:00'
 title = 'OSCP+合格体験記'
 tags = ['OSCP', '資格']
 +++
@@ -9,11 +9,18 @@ tags = ['OSCP', '資格']
 
 試験の概要については、[OffSec公式サイト](https://www.offsec.com/courses/pen-200/)で最新の情報をご確認ください。
 
-## 概要
+## 合格までの道のり
 
-2025年2月に初めて受験しましたが、不合格の結果に。同年6月に再受験して、無事合格しました。
+2024年6月から、PEN-200を受講しました。
+当初は加点10ポイントの取得を目標に、テキストを順調に読み進め、練習問題にも取り組んでいました。
 
-## 参考にしたサイトや動画
+しかし8月、[試験制度の変更に関する通知](https://help.offsec.com/hc/en-us/articles/29840452210580-Changes-to-the-OSCP)を受けたことをきっかけに、学習方針を大きく見直しました。それ以降は、[Tj Null](https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview)や[Lainkusanagi](https://docs.google.com/spreadsheets/d/18weuz_Eeynr6sXFQ87Cd5F0slOj9Z6rt/edit?gid=487240997#gid=487240997)を参考に、Proving GroundsやChallenge Labsのマシンを中心として、ほぼ毎日1台のペースで攻略する実践重視の学習に切り替えました。
+
+1年以内に2回受験できるLearning Oneプランを契約していたため、まずは2025年2月に初回受験しました。しかし結果は不合格。ある程度の自信があっただけに、この結果には意気消沈し、その後しばらくはほとんど勉強できない状態が続きました。
+
+そのまま期限が迫り、ほぼ何も知識をアップデートしないまま、同年6月に再受験。結果、無事合格することができました。
+
+## おすすめのサイトや動画
 
 [Juggernaut Pentesting Academy](https://juggernaut-sec.com/)
 
@@ -43,6 +50,8 @@ terminator
 
 ### ブラウザのお気に入り（ブックマーク）
 
+Kali Linuxのブラウザに登録していたブックマークをご紹介します。
+
 [Exploit-DB](https://www.exploit-db.com/)
 
 [Reverse Shell Generator](https://www.revshells.com/)
@@ -50,6 +59,8 @@ terminator
 [Crackstation](https://crackstation.net/)
 
 [CyberChef](https://gchq.github.io/CyberChef/)
+
+<!--
 
 ### スキャン
 
@@ -61,6 +72,9 @@ terminator
 
 [SecLists](https://www.kali.org/tools/seclists/)
 
+
+-->
+
 ## さいごに
 
-諦めないことが肝心です。
+
