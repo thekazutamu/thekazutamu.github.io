@@ -36,7 +36,7 @@ HackTheBoxのウォークスルーや、Linux/Windowsのハッキング技術に
 
 [Obsidian](https://obsidian.md/)
 
-学んだことは全てObsidianにまとめました。自分の知識量をグラフビューで可視化できるので、モチベーションアップにもつながりました。マイルールとして、全てMITRE ATT&CKと関連づけるようにタグ付けしていました。
+学んだことは全てObsidianにまとめました。自分の知識量をグラフビューで可視化できるので、モチベーションアップにもつながりました。マイルールとして、全て[MITRE ATT&CK](https://attack.mitre.org/)と関連づけるようにタグ付けしていました。後になって、これはレポート作成に活きると実感しました。
 
 [Sublime Text](https://www.sublimetext.com/)
 
@@ -46,7 +46,7 @@ HackTheBoxのウォークスルーや、Linux/Windowsのハッキング技術に
 
 terminator
 
-必需品です。tmuxはあまり自分とは相性が合いませんでした。
+必需品です。[tmux](https://www.kali.org/tools/tmux/)はあまり自分とは相性が合いませんでした。
 
 ### ブラウザのお気に入り（ブックマーク）
 
@@ -77,4 +77,4 @@ Kali Linuxのブラウザに登録していたブックマークをご紹介し�
 
 ## さいごに
 
-
+[Try Harder](https://www.offsec.com/blog/what-it-means-to-try-harder/)の精神を学ぶことができました。
