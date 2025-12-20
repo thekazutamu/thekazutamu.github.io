@@ -21,6 +21,7 @@ colorScheme = "Blowfish"
 # メインセクション（投稿一覧などで表示対象とするセクション）
 mainSections = ["posts", "writeups"]
 
+enableCodeCopy = true
 
 [announcement]
   enable = true

@@ -4,7 +4,6 @@ name = "Writeup"
 pageRef = "/writeups"
 weight = 10
 
-
 [[main]]
 name = "記事"
 pageRef = "/posts"
