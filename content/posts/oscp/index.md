@@ -41,6 +41,8 @@ HackTheBoxのウォークスルーや、Linux/Windowsのハッキング技術に
 
 学んだことは全てObsidianにまとめました。自分の知識量をグラフビューで可視化できるので、モチベーションアップにもつながりました。マイルールとして、全て[MITRE ATT&CK](https://attack.mitre.org/)と関連づけるようにタグ付けしていました。後になって、これはレポート作成に活きると実感しました。
 
+{{< video "output.mp4" >}}
+
 ![obsidian](obsidian.gif)
 
 [Sublime Text](https://www.sublimetext.com/)
@@ -86,4 +88,3 @@ Kali Linuxのブラウザに登録していたブックマークをご紹介し�
 
 試験対策を通して[Try Harder](https://www.offsec.com/blog/what-it-means-to-try-harder/)の精神を身につけることができました。OffSec社の意図や目的がそこにあるとすれば、OSCPはその狙いに成功している試験だと感じています。
 
-{{< video "output.mp4" >}}
