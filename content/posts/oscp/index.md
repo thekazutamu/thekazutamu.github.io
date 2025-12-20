@@ -43,7 +43,6 @@ HackTheBoxのウォークスルーや、Linux/Windowsのハッキング技術に
 
 {{< video "output.mp4" >}}
 
-
 [Sublime Text](https://www.sublimetext.com/)
 
 マシン攻略中、一時的なメモを残すためにSublime Textを使っていました。自分の中でさらに格上げすべきと判断した情報は、[cherrytree](https://www.kali.org/tools/cherrytree/)に書き写しました。
