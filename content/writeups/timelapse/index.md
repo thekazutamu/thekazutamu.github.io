@@ -3,8 +3,12 @@ draft = false
 date = '2025-12-19T23:27:02+09:00'
 lastmod = '2025-12-19T23:27:02+09:00'
 title = 'HTB: Timelapse'
-tags = ['HackTheBox', 'EASY']
+tags = ['HackTheBox', 'Windows', 'EASY']
 +++
+
+## ポートスキャン
+
+nmapでポートスキャンします。
 
 ```bash
 sudo nmap -sC -sV $RHOST
