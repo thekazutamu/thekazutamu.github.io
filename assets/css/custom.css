@@ -7,3 +7,12 @@ body {
   word-break: auto-phrase;
   line-break: strict;
 }
+
+
+/* モバイルメニューの文字サイズ調整 */
+@media (max-width: 768px) {
+  #menu a {
+    font-size: 1.2rem;   /* ← まずはこれ */
+    padding: 0.75rem 0; /* タップしやすく */
+  }
+}
