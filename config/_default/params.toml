@@ -22,7 +22,7 @@ colorScheme = "Blowfish"
 # params セクション: テーマ固有の追加パラメータ
 [params]
   # メインセクション（投稿一覧などで表示対象とするセクション）
-  mainSections = ["posts"]
+  mainSections = ["posts", "writeups"]
 
 [announcement]
   enable = true
