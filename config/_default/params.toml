@@ -21,12 +21,8 @@ colorScheme = "Blowfish"
 # メインセクション（投稿一覧などで表示対象とするセクション）
 mainSections = ["posts", "writeups"]
 
+# コマンドコピー
 enableCodeCopy = true
-
-[announcement]
-  enable = true
-  text = "🚧 サイト構築中です（一部コンテンツは順次公開予定）"
-
 
 # homepage セクション: ホームページのレイアウトや表示設定
 [homepage]
