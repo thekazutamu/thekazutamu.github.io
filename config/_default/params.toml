@@ -33,6 +33,7 @@ enableCodeCopy = true
   # ヒーロー背景にぼかしを入れるか（true/false）
   layoutBackgroundBlur = true
 
+
 # footer セクション: フッター表示の細部設定
 [footer]
 # テーマの帰属表記を表示するか（false = 非表示）
