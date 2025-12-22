@@ -21,7 +21,7 @@ heroStyle = 'background'
 
 しかし8月、[試験制度の変更に関する通知](https://help.offsec.com/hc/en-us/articles/29840452210580-Changes-to-the-OSCP)を受けたことをきっかけに、学習方針を大きく見直しました。それ以降は、[Tj Null](https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview)や[Lainkusanagi](https://docs.google.com/spreadsheets/d/18weuz_Eeynr6sXFQ87Cd5F0slOj9Z6rt/edit?gid=487240997#gid=487240997)を参考に、Proving GroundsやChallenge Labsのマシンを中心として、ほぼ毎日1台のペースで攻略する実践重視の学習に切り替えました。
 
-1年以内に2回受験できる[Learn One](https://www.offsec.com/products/learn-one/)プランを契約していたため、まずは2025年2月に初回受験しました。しかし結果は不合格。ある程度の自信があっただけに、この結果には意気消沈し、その後しばらくはほとんど勉強できない状態が続きました。
+1年以内に2回受験できる[Learn One](https://www.offsec.com/products/learn-one/)プランを契約していたため、まずは2025年2月に初回受験しました。しかし結果は不合格。ある程度の自信があっただけに、この結果には意気消沈しつつ、自分に何が足りなかったのか自問自答して、その後しばらくはほとんど勉強できない状態が続きました。
 
 そのまま期限が迫り、ほぼ何も知識をアップデートしないまま、同年6月に再受験。結果、無事合格することができました。
 
