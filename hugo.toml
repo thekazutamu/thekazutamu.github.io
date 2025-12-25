@@ -3,6 +3,7 @@ defaultContentLanguage = "ja"
 languageCode = 'ja-jp'
 title = 'KAZUTAMU'
 theme = 'blowfish'
+enableRobotsTXT = true
 
 [taxonomies]
   tag = "tags"

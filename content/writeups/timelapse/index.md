@@ -2,7 +2,7 @@
 draft = false
 date = '2025-12-19T23:27:02+09:00'
 title = 'HTB: Timelapse'
-tags = ['HackTheBox', 'Windows', 'EASY']
+tags = ['HackTheBox', 'Windows', 'Easy']
 +++
 
 ## 概要
