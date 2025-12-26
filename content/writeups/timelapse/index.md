@@ -69,4 +69,5 @@ Nmap done: 1 IP address (1 host up) scanned in 136.55 seconds
 > [!NOTE] メモ
 > smbclientの使い方は、[こちらの記事](/posts/pentest-tools/)にまとめています。
 
+
 ![img](smbclient.png)
