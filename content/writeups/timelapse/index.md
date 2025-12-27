@@ -57,7 +57,7 @@ smbclient -N //<RHOST>/Shares
 zip2john htb/timelapse/Dev/winrm_backup.zip > htb/timelapse/winrm_backup.hash
 ```
 
-`John The Ripper`でパスワードを解析します。ワードリストに`rockyou.txt`を使用します。
+`John`でパスワードを解析します。ワードリストに`rockyou.txt`を使用します。
 
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt htb/timelapse/winrm_backup.hash
@@ -75,7 +75,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt htb/timelapse/winrm_backup.hash
 pfx2john htb/timelapse/legacyy_dev_auth.pfx > htb/timelapse/legacyy_dev_auth.hash
 ```
 
-`John The Ripper`でパスワードを解析します。ワードリストに`rockyou.txt`を使用します。
+`John`でパスワードを解析します。ワードリストに`rockyou.txt`を使用します。
 
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt htb/timelapse/legacyy_dev_auth.hash
