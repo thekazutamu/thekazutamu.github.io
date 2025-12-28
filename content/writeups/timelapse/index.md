@@ -12,7 +12,6 @@ tags = ['HackTheBox', 'Windows', 'Easy']
 
 ## ポートスキャン
 
-
 `nmap`でポートスキャンします。
 
 ```bash
@@ -20,7 +19,25 @@ sudo nmap -sC -sV <RHOST>
 ```
 ![img](nmap.png)
 
-`SMBポート(445)`が開いています。
+### スキャン結果
+
+スキャン結果から、以下のポートが開放されていることがわかります。
+
+| Port | Service |  |
+|------|---------|---------|
+| 53/tcp | DNS |  |
+| 88/tcp | Kerberos |  |
+| 135/tcp | RPC |  |
+| 139/tcp | NetBIOS |  |
+| 389/tcp | LDAP |  |
+| 445/tcp | SMB |  |
+| 464/tcp | Kerberos |  |
+| 593/tcp | RPC |  |
+| 636/tcp | LDAP |  |
+| 3268/tcp | LDAP |  |
+| 3269/tcp | LDAP |  |
+| 5986/tcp | WinRM |  |
+
 
 ## SMB列挙
 
