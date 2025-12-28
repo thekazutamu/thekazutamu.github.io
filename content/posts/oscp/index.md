@@ -1,7 +1,6 @@
 +++
 draft = false
 date = '2025-12-15T23:27:02+09:00'
-lastmod = '2025-12-20T23:27:02+09:00'
 title = 'OSCP+合格体験記'
 tags = ['OSCP', '資格']
 showHero = true
