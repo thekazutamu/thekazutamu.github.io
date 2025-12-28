@@ -71,18 +71,6 @@ Kali Linuxのブラウザに登録していたブックマークをご紹介し�
 
 [CyberChef](https://gchq.github.io/CyberChef/)
 
-<!--
-
-### スキャン
-
-[FeroxBuster](https://www.kali.org/tools/feroxbuster/)
-
-[Autorecon](https://www.kali.org/tools/autorecon/)
-
-[Rustscan](https://github.com/bee-san/RustScan)
-
-[SecLists](https://www.kali.org/tools/seclists/)
--->
 
 ## さいごに
 

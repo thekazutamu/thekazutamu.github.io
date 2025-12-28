@@ -36,6 +36,7 @@ smartTOCHideUnfocusedChildren = true
   showRecent = true
   showRecentItems = 3
   cardView = true
+  showMoreLink = true
   # ヒーロー背景にぼかしを入れるか（true/false）
   layoutBackgroundBlur = true
 

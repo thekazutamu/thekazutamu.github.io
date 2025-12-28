@@ -10,6 +10,14 @@ tags = ['HackTheBox', 'Windows', 'Easy']
 >  **OS:** Windows  
 >  **Difficulty:** Easy
 
+{{< mermaid >}}
+graph LR;
+A[ポートスキャン]-->B[SMB列挙]
+B-->C[パスワード解析]
+C-->D[秘密鍵・公開鍵の抽出]
+D-->E[WinRM経由での接続]
+{{< /mermaid >}}
+
 ## ポートスキャン
 
 `Nmap`でポートスキャンします。
