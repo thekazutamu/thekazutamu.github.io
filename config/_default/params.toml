@@ -33,6 +33,9 @@ enableCodeCopy = true
   # ヒーロー背景にぼかしを入れるか（true/false）
   layoutBackgroundBlur = true
 
+[header]
+  layout = "fixed-fill-blur"
+
 
 # footer セクション: フッター表示の細部設定
 [footer]
@@ -52,3 +55,4 @@ showThemeAttribution = false
   # 目次を表示するか
   showTableOfContents = true
   showDateUpdated = true
+  showBreadcrumbs = true

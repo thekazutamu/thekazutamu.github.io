@@ -5,6 +5,7 @@ title = 'KAZUTAMU'
 theme = 'blowfish'
 enableRobotsTXT = true
 
+
 [taxonomies]
   tag = "tags"
   category = "categories"
