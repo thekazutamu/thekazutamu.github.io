@@ -24,6 +24,10 @@ mainSections = ["posts", "writeups"]
 # コマンドコピー
 enableCodeCopy = true
 
+# 目次ハイライト
+smartTOC = true
+smartTOCHideUnfocusedChildren = true
+
 # homepage セクション: ホームページのレイアウトや表示設定
 [homepage]
   # ホームのレイアウトタイプ（例: "hero"）
@@ -34,7 +38,8 @@ enableCodeCopy = true
   layoutBackgroundBlur = true
 
 [header]
-  layout = "fixed-fill-blur"
+  #basic,fixed,fixed-fill,fixed-fill-blur
+  layout = "fixed"
 
 
 # footer セクション: フッター表示の細部設定
