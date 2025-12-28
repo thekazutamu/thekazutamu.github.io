@@ -12,7 +12,7 @@ tags = ['HackTheBox', 'Windows', 'Easy']
 
 ## ポートスキャン
 
-`nmap`でポートスキャンします。
+`Nmap`でポートスキャンします。
 
 ```bash
 sudo nmap -sC -sV <RHOST>
@@ -21,7 +21,7 @@ sudo nmap -sC -sV <RHOST>
 
 ### スキャン結果
 
-スキャン結果から、以下のポートが開放されていることがわかります。
+Nmapスキャン結果から、以下のポートが開放されていることがわかります。
 
 | Port | Service |  |
 |------|---------|---------|
