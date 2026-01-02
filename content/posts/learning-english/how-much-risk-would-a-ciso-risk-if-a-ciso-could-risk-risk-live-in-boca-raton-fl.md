@@ -12,13 +12,16 @@ tags = ['英語学習','ポッドキャスト','CISO Series Podcast']
 ## 気になった語句
 
 I won’t go into too many details here
-: 
+: 詳細は割愛しますが
 
 technology-agnostic
-: 
+: 専門外
 
-push for
-: 
+push for ~
+: ~の実現を目指す
+
+skeleton crew
+: 限られた人員
 
 sits untouched
-: 
+: 放置されている
