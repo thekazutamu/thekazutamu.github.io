@@ -1,7 +1,7 @@
 
 [[main]]
 name = "Writeup"
-pageRef = "/writeups"
+pageRef = "/posts/writeups"
 weight = 10
 
 [[main]]
