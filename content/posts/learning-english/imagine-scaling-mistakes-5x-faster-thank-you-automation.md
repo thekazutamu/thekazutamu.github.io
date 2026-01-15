@@ -23,7 +23,7 @@ the bottom line
 : 要は
 
 pass through
-: 通過する
+: すり抜ける
 
 get ~ involved
 : 関与させる
