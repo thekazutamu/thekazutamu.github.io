@@ -64,9 +64,20 @@ smbclient -N //<RHOST>/Shares
 
 `exit`コマンドで接続を終了します。
 
+<!--
+smbコマンドのスクショ
+-->
+
+<!--
+SYSVOLフォルダは？他のフォルダは？
+-->
+
 ## ZIPファイルのパスワード解析
 
-`Dev`フォルダ配下に`winrm_backup.zip`が見つかります。ZIPファイルを展開してみようとすると、パスワード入力が求められます。
+`Dev`フォルダ配下に`winrm_backup.zip`が見つかります。ZIPファイルを展開してみると、パスワード入力が求められます。
+<!--
+ZIPファイル展開のスクショ
+-->
 
 まずは、`zip2john`でパスワードハッシュを抽出します。
 
@@ -88,6 +99,10 @@ john --wordlist=/usr/share/wordlists/rockyou.txt htb/timelapse/winrm_backup.hash
 
 `winrm_backup.zip`を展開すると、PFXファイルが見つかります。
 このPFXファイルもパスワードで保護されています。
+
+<!--
+ZIPファイル展開のスクショ
+-->
 
 `pfx2john`でパスワードハッシュを抽出します。
 
@@ -116,11 +131,19 @@ openssl pkcs12 -in htb/timelapse/legacyy_dev_auth.pfx -nocerts -out htb/timelaps
 openssl pkcs12 -in htb/timelapse/legacyy_dev_auth.pfx -nokeys -out htb/timelapse/legacyy_dev_auth.cert
 ```
 
+<!--
+key certでいいのか
+-->
+
 ## WinRM経由での接続
 
 ![img](evil-winrm.png)
 
 ## userフラグの取得
+
+`legaccy`ユーザーの`Desktop`配下にuserフラグが見つかります。
+
+`type`コマンドでフラグを表示します。
 
 ```bash
 type Desktop/user.txt
@@ -128,15 +151,38 @@ type Desktop/user.txt
 
 ## svc_deploy
 
+<!--
+ConsoleHost_historyとは？
+-->
+
+
+ユーザー名`svc_deploy`のパスワードが``であることがわかります。
+
 ![img](ConsoleHost_history.png)
 
+## WinRM経由での接続
+
+<!--
+WinRMのスクしょ
+-->
+
 ## ReadLAPSPassword
+
+`svc_deploy`が所属するグループを表示してみます。
+
+<!--
+svc_deployのグループ表示
+-->
+
+`LAPSReader`という名前のグループに所属していることがわかりました。
+
+このグループ名から、LAPSパスワードを閲覧できることが推測できます。
 
 ```bash
 Get-DomainComputer "MachineName" -Properties "cn","ms-mcs-admpwd","ms-mcs-admpwdexpirationtime"
 ```
 
-[ReadLAPSPassword | SpecterOps](https://bloodhound.specterops.io/resources/edges/read-laps-password)
+参考：[ReadLAPSPassword | SpecterOps](https://bloodhound.specterops.io/resources/edges/read-laps-password)
 
 パスワードが`Gp&/n0ibz2JRQ4{GSTJ);P;0`であることがわかります。
 
@@ -153,3 +199,4 @@ evil-winrm -u administrator -p 'Gp&/n0ibz2JRQ4{GSTJ);P;0' -i <RHOST> -S
 
 ## rootフラグの取得
 
+<!-- rootフラグ画像>
