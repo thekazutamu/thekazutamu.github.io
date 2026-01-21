@@ -20,7 +20,7 @@ tags = ['Kali Linux']
 ### パッケージ最新化
 ターミナルで、以下のコマンドを入力して実行します。
    ```bash
-   sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+   sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
    ```
 
 ## 任意設定
@@ -69,7 +69,6 @@ sudo apt install peass
 ```
 sudo apt install libreoffice
 ```
-
 
 #### rlwrap
 
