@@ -35,7 +35,6 @@ smartTOCHideUnfocusedChildren = true
   # 最近の投稿を表示するか
   showRecent = true
   showRecentItems = 100
-  
   showMoreLink = true
   # ヒーロー背景にぼかしを入れるか（true/false）
   layoutBackgroundBlur = true

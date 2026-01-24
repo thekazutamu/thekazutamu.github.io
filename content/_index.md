@@ -12,7 +12,18 @@ layout: "home"
 心躍る、セキュリティを。
 {{< /typeit >}}
 
-### セキュリティエンジニアのための英語
-### OSCP合格体験記
-### ペネトレ戦略
-### Writeup集
+## おすすめ記事
+
+
+{{< article
+  link="/posts/oscp/"
+  showSummary=false
+  compactSummary=true
+>}}
+
+{{< article
+  link="/posts/writeups/timelapse/"
+  showSummary=false
+  compactSummary=true
+>}}
+
