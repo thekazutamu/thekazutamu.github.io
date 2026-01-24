@@ -260,3 +260,23 @@ evil-winrm -u administrator -p 'Gp&/n0ibz2JRQ4{GSTJ);P;0' -i <RHOST> -S
 ## 関連ページ
 
 今回のWriteupで使用したペネトレツールなど、関連ページを紹介します。
+
+{{< article
+  link="/posts/pentest-tools/nmap/"
+  showSummary=false
+>}}
+
+{{< article
+  link="/posts/pentest-tools/smbclient/"
+  showSummary=false
+>}}
+
+{{< article
+  link="/posts/pentest-tools/john/"
+  showSummary=false
+>}}
+
+{{< article
+  link="/posts/pentest-tools/evil-winrm/"
+  showSummary=false
+>}}
