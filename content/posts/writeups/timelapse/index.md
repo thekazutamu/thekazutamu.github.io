@@ -255,7 +255,7 @@ evil-winrm -u administrator -p 'Gp&/n0ibz2JRQ4{GSTJ);P;0' -i <RHOST> -S
 
 `TRX`ユーザーの`Desktop`配下にrootフラグが見つかります。
 
-<!-- rootフラグ画像-->
+![alt text](image-7.png)
 
 ## 関連ページ
 
