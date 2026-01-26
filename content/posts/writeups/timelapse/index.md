@@ -24,7 +24,7 @@ sudo nmap -sC -sV <RHOST>
 
 Nmapスキャン結果から、以下のポートが開放されていることがわかります。
 
-| Port | Service |  |
+| ポート | サービス |  |
 |------|---------|---------|
 | 53/tcp | DNS |  |
 | 88/tcp | Kerberos |  |
@@ -228,6 +228,7 @@ whoami /groups
 
 このグループ名から、LAPSパスワードを閲覧できることが推測できます。
 
+> マシン名Timelapseの由来？
 
 LAPSパスワードは、`ms-mcs-admpwd`に格納されているため、`Get-ADComputer`コマンドレットで表示します。
 
