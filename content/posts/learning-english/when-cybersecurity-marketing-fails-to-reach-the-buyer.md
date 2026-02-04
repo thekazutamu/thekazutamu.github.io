@@ -13,8 +13,7 @@ tags = ['英語学習','ポッドキャスト','Defense in Depth']
 ## 気になった語句
 
 proprietary
-: 固有の
-
+: 独自の
 
 more so than usual
 : いつも以上に
