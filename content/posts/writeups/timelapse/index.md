@@ -22,7 +22,7 @@ sudo nmap -sC -sV <RHOST>
 
 ### スキャン結果
 
-Nmapスキャン結果から、以下のポートが開放されていることがわかります。
+`Nmap`のスキャン結果から、以下のポートが開放されていることがわかります。
 WinRM(5986)が使用されていることに注意します。
 
 | ポート | サービス |  |
@@ -49,7 +49,7 @@ WinRM(5986)が使用されていることに注意します。
 smbclient -N -L <RHOST>
 ```
 
-`Shares`と`SYSVOL`が見つかります。
+`Shares`が見つかります。
 
 ![img](smbclient.png)
 
@@ -91,7 +91,7 @@ SYSVOLフォルダは？他のフォルダは？
 ![alt text](image-2.png)
 
 
-一方、`HelpDesk`フォルダには、ファイルが4つあります。いずれもLAPS技術に関するMicrosoft社公式ドキュメントのようです。
+一方、`HelpDesk`フォルダには、ファイルが4つあります。1つはインストーラーで、ほか3つはLAPS技術に関するMicrosoft社公式ドキュメントのようです。
 
 ## ZIPファイルのパスワード解析
 
@@ -153,20 +153,19 @@ openssl pkcs12 -in htb/timelapse/legacyy_dev_auth.pfx -nocerts -out htb/timelaps
 
 
 ```bash
-openssl pkcs12 -in htb/timelapse/legacyy_dev_auth.pfx -nokeys -out htb/timelapse/legacyy_dev_auth.cert
+openssl pkcs12 -in htb/timelapse/legacyy_dev_auth.pfx -nokeys -out htb/timelapse/legacyy_dev_auth.crt
 ```
 
-<!--
-key certでいいのか
--->
 
 ## WinRM経由での接続 (legaccy)
 
 抽出した秘密鍵と公開鍵を使って、WinRM経由でマシンに接続します。
 
 ```bash
-evil-winrm -c htb/timelapse/legacyy_dev_auth.cert -k htb/timelapse/legacyy_dev_auth.key -i <RHOST> -S
+evil-winrm -k htb/timelapse/legacyy_dev_auth.key -c htb/timelapse/legacyy_dev_auth.crt -i <RHOST> -S
 ```
+`-S`
+: SSLを有効にします（標的マシンが5986ポートを使用しているため）
 
 接続は成功しました。`whoami`コマンドを実行すると、`legaccy`ユーザーとしてログオンできていることがわかります。
 
