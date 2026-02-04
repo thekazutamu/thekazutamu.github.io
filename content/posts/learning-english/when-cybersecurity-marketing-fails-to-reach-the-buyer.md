@@ -15,6 +15,9 @@ tags = ['英語学習','ポッドキャスト','Defense in Depth']
 proprietary
 : 独自の
 
+pixie dust
+: 魔法
+
 more so than usual
 : いつも以上に
 
