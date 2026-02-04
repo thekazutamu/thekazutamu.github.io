@@ -23,3 +23,6 @@ get ~ arms around
 
 up
 : 向上させる
+
+## コメント
+*proprietary*は頻出。同義語uniqueよりも堅くビジネス寄り。
