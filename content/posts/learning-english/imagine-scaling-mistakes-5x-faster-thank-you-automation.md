@@ -24,6 +24,8 @@ the bottom line
 
 pass through
 : すり抜ける
+{{< keyword icon="tag">}} IT・セキュリティ {{< /keyword >}}
+
 
 get ~ involved
 : 関与させる
@@ -33,6 +35,8 @@ tag onto that
 
 stay in business
 : 事業継続する
+{{< keyword icon="tag">}} IT・セキュリティ {{< /keyword >}}
+
 
 live up to it
 : 達する

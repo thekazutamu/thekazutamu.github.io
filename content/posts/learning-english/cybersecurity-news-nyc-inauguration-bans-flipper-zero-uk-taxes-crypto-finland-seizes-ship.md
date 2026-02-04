@@ -15,6 +15,7 @@ tags = ['英語学習','ポッドキャスト','Cybersecurity Headlines']
 
 follow malicious instructions
 : 攻撃者の指示に従う
+{{< keyword icon="tag">}} IT・セキュリティ {{< /keyword >}}
 
 
 fault

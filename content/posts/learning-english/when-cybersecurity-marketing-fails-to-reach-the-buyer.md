@@ -14,6 +14,7 @@ tags = ['英語学習','ポッドキャスト','Defense in Depth']
 
 proprietary
 : 独自の
+{{< keyword icon="tag">}} IT・セキュリティ {{< /keyword >}}
 
 pixie dust
 : 魔法

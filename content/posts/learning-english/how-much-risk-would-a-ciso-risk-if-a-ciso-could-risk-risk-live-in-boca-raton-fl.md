@@ -22,6 +22,9 @@ push for ~
 
 skeleton crew
 : 限られた人員
+{{< keyword icon="tag">}} IT・セキュリティ {{< /keyword >}}
+
 
 sits untouched
 : 放置されている
+{{< keyword icon="tag">}} IT・セキュリティ {{< /keyword >}}
