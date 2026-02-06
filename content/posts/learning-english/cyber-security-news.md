@@ -13,6 +13,9 @@ BleepingComputer
 https://www.bleepingcomputer.com/
 2004年にLawrence Abrams氏が立ち上げ。
 
+Infosecurity Magazine
+https://www.infosecurity-magazine.com/
+
 ## IT・テクノロジー
 
 The Register
