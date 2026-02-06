@@ -22,6 +22,13 @@ pixie dust
 more so than usual
 : いつも以上に
 
+enforce
+: 強制する
+{{< keyword icon="tag">}} IT・セキュリティ {{< /keyword >}}
+
+point solutions
+: 用途特化型のソリューション
+
 get ~ arms around
 : 理解してもらう
 
@@ -29,4 +36,5 @@ up
 : 向上させる
 
 ## コメント
-*proprietary*は頻出。同義語uniqueよりも堅くビジネス寄り。
+*proprietary*は頻出。uniqueよりも堅くビジネス寄り。
+
