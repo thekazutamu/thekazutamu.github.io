@@ -1,6 +1,6 @@
 ---
 date: '2026-01-02T23:14:28+09:00'
-title: "私が観た映画"
+title: "映画"
 url: "/movies/"
 layout: "page"
 showDate: false

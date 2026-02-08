@@ -8,3 +8,5 @@ tags = ['英語学習']
 1. untouched
 2. enforce
 3. pass through
+4. compromise
+5. 
