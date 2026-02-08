@@ -1,7 +1,7 @@
 +++
 date = '2026-02-08T15:57:08+09:00'
 draft = false
-title = '台湾旅行'
+title = '台湾紀行'
 +++
 
 ## 旅程
@@ -26,34 +26,48 @@ title = '台湾旅行'
 
 ## 飲食店
 
+1 TWD = 5.00 JPY（2026年1月9日(金)時点）
+
 ### [雄記葱抓餅 (Hsiung Chi Scallion Pancake)](https://maps.app.goo.gl/CzuAih76eQKXfwfMA)
 
 - 葱抓餅（ツォンジュアビン）
+  : 55元（≒273円）（卵・チーズ付）
 
 ### [天天利美食坊 (Tian Tian Li Delicacies)](https://maps.app.goo.gl/RhTCyCf9kn4fuKF29)
 
 - 滷肉飯（ルーローファン）
+  : 35元（≒174円）
 
 ### [龍門客桟餃子館 (Longmen Dumpling House)](https://maps.app.goo.gl/yxNQuqp4UQ4tBqDq5)
 
 - 手工豬肉水餃
+  : 70元（≒348円）
 - 滷味（ルーウェイ）
+  : 豆皮、豚足、小黄瓜
 
 ### [劉山東小吃店 (Liu Shandong Beef Noodles)](https://maps.app.goo.gl/pVeoNC2CxST1uEYw6)
 
 - 牛肉麺
+  : 240元（≒1,193円）
 
 ### [好朋友涼麵 (Good Friend Cold Noodles)](https://maps.app.goo.gl/yMckd7Wp9m1WJ9PG8)
 
 - 冷麺（リャオメン）
+  : 60元（≒298円）
 
 ### [士林十全排骨店](https://maps.app.goo.gl/x5bS9WAcfmHqvRVw5)
 
 - 滷肉飯（ルーローファン）
+  : 30元（≒149円）
+- 十全排骨（シーチュエン・パイグー）
+  : 100元（≒497円）
+- 十全排骨（シーチュエン・パイグー）
+  : 100元（≒497円）
 
 ### [士林豪大大雞排-基河店](https://maps.app.goo.gl/nrrcbtMutnEPxQmz8)
 
 - 雞排（ジーパイ）
+  : 95元（≒472円）
 
 ## 宿泊
 
@@ -88,7 +102,7 @@ title = '台湾旅行'
 - 温度：11度
 - 湿度：77%
 
-## 土産
+## 土産品
 
 ### [パイナップルケーキ（Vigor Kobo）](https://www.vigorkobo.com/)
 ### [エッグロール（June 1st）](https://www.june1.com.tw/)
