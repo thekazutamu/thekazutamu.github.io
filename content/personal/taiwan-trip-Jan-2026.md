@@ -1,7 +1,7 @@
 +++
 date = '2026-02-08T15:57:08+09:00'
 draft = false
-title = '台湾紀行'
+title = '台湾紀行（2026）'
 +++
 
 ## 旅程
@@ -31,43 +31,43 @@ title = '台湾紀行'
 ### [雄記葱抓餅 (Hsiung Chi Scallion Pancake)](https://maps.app.goo.gl/CzuAih76eQKXfwfMA)
 
 - 葱抓餅（ツォンジュアビン）
-  : 55元（≒273円）（卵・チーズ付）
+  : 55元（275円）（卵・チーズ付）
 
 ### [天天利美食坊 (Tian Tian Li Delicacies)](https://maps.app.goo.gl/RhTCyCf9kn4fuKF29)
 
 - 滷肉飯（ルーローファン）
-  : 35元（≒174円）
+  : 35元（175円）
 
 ### [龍門客桟餃子館 (Longmen Dumpling House)](https://maps.app.goo.gl/yxNQuqp4UQ4tBqDq5)
 
 - 手工豬肉水餃
-  : 70元（≒348円）
+  : 70元（350円）
 - 滷味（ルーウェイ）
   : 豆皮、豚足、小黄瓜
 
 ### [劉山東小吃店 (Liu Shandong Beef Noodles)](https://maps.app.goo.gl/pVeoNC2CxST1uEYw6)
 
 - 牛肉麺
-  : 240元（≒1,193円）
+  : 240元（1,200円）
 
 ### [好朋友涼麵 (Good Friend Cold Noodles)](https://maps.app.goo.gl/yMckd7Wp9m1WJ9PG8)
 
 - 冷麺（リャオメン）
-  : 60元（≒298円）
+  : 60元（300円）
 
 ### [士林十全排骨店](https://maps.app.goo.gl/x5bS9WAcfmHqvRVw5)
 
 - 滷肉飯（ルーローファン）
-  : 30元（≒149円）
+  : 30元（150円）
 - 十全排骨（シーチュエン・パイグー）
-  : 100元（≒497円）
-- 十全排骨（シーチュエン・パイグー）
-  : 100元（≒497円）
+  : 100元（500円）
+- 空芯菜
+  : 100元（500円）
 
 ### [士林豪大大雞排-基河店](https://maps.app.goo.gl/nrrcbtMutnEPxQmz8)
 
 - 雞排（ジーパイ）
-  : 95元（≒472円）
+  : 95元（475円）
 
 ## 宿泊
 
@@ -95,8 +95,8 @@ title = '台湾紀行'
 ### 記録
 - 距離：42.195km（フルマラソン）
 - 時間：4:49:40（大会公式）
-- スタート時刻：05:30
-- ゴール時刻：10:19
+  - スタート時刻：05:30
+  - ゴール時刻：10:19
 
 ### 環境
 - 温度：11度
