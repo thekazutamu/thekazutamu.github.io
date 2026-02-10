@@ -10,7 +10,7 @@ heroStyle = 'background'
 
 #### 1月9日(金)
 
-
+緊張した。
 
 #### 1月10日(土)
 
@@ -26,7 +26,7 @@ heroStyle = 'background'
 
 #### 1月12日(月)
 
-
+最後のUber。
 
 
 ## 旅程
