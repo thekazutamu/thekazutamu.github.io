@@ -6,6 +6,9 @@ showHero = true
 heroStyle = 'background'
 +++
 
-## Eminem - Lucky You (feat. Joyner Lucas)
+Eminem - Lucky You (feat. Joyner Lucas)
 
-## Foo Fighters - The Pretender
+Foo Fighters - The Pretender
+
+
+## マジック 
