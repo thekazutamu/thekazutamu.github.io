@@ -37,7 +37,7 @@ heroStyle = 'background'
 
 メール件名
 
-- Progress update
+- Progress Update
 
 
 
