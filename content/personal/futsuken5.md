@@ -1,7 +1,7 @@
 +++
 date = '2026-04-03T07:56:42+09:00'
 draft = false
-title = '仏検5級合格体験記'
+title = '仏検5級'
 showHero = true
 heroStyle = 'background'
 +++
