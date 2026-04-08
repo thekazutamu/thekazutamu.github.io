@@ -1,6 +1,6 @@
 +++
 date = '2026-04-03T07:56:42+09:00'
-draft = true
+draft = false
 title = '仏検5級合格体験記'
 showHero = true
 heroStyle = 'background'
@@ -12,6 +12,7 @@ heroStyle = 'background'
 
 ## 教材
 
+学習に使用した教材は、以下の1つ：
 - **2026年度版仏検3級・4級・5級仏検公式ガイドブック**  
   ガイドブック。2,860円（税込）。
 
