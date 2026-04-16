@@ -11,7 +11,6 @@ heroStyle = 'background'
     - please let us know a convenient time
 - at your convenience
   - at your earliest convenience
-- arrange
 - on track
   - more or less on track
     - we are still more or less on track for ~ 
@@ -34,6 +33,8 @@ heroStyle = 'background'
     - we are focused on ~
 - initially
   - as initially planned
+- reach/contact
+  - reach me at ~
 
 メール件名
 
